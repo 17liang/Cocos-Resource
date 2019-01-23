@@ -309,6 +309,146 @@ sup {
 }
 </style>
 
+<style type="text/css">
+/**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: black;
+	background: none;
+	text-shadow: 0 1px white;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+@media print {
+	code[class*="language-"],
+	pre[class*="language-"] {
+		text-shadow: none;
+	}
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #f5f2f0;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+
+.token.punctuation {
+	color: #999;
+}
+
+.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: #a67f59;
+	background: hsla(0, 0%, 100%, .5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #07a;
+}
+
+.token.function {
+	color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+	color: #e90;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+</style>
+
 
 </head>
 
@@ -346,41 +486,42 @@ sup {
 <li><a href="#toc_13">Cocos 配套工具下载</a>
 
 <ul>
-<li><a href="#toc_14">Cocos 下载</a></li>
-<li><a href="#toc_15">Cocos Studio 下载</a></li>
-<li><a href="#toc_16">Cocos FrameWork 下载</a></li>
-<li><a href="#toc_17">Cocos Simuator 下载</a></li>
-<li><a href="#toc_18">Cocos IDE 下载</a></li>
-<li><a href="#toc_19">Cocos Creator 下载</a></li>
+<li><a href="#toc_14">Cocos Creator v1 下载</a></li>
+<li><a href="#toc_15">Cocos Creator v2 下载</a></li>
+<li><a href="#toc_16">Cocos 下载</a></li>
+<li><a href="#toc_17">Cocos Studio 下载</a></li>
+<li><a href="#toc_18">Cocos FrameWork 下载</a></li>
+<li><a href="#toc_19">Cocos Simuator 下载</a></li>
+<li><a href="#toc_20">Cocos IDE 下载</a></li>
 </ul></li>
-<li><a href="#toc_20">Cocos 版本关系说明</a>
+<li><a href="#toc_21">Cocos 版本关系说明</a>
 
 <ul>
-<li><a href="#toc_21">Cocos2d-x 与 Cocos Studio 版本对应关系</a></li>
-<li><a href="#toc_22">Cocos2d-x 与 NDK 版本对应关系</a></li>
+<li><a href="#toc_22">Cocos2d-x 与 Cocos Studio 版本对应关系</a></li>
+<li><a href="#toc_23">Cocos2d-x 与 NDK 版本对应关系</a></li>
 </ul></li>
-<li><a href="#toc_23">Cocos Android 相关下载</a>
+<li><a href="#toc_24">Cocos Android 相关下载</a>
 
 <ul>
-<li><a href="#toc_24">Android NDK 下载</a></li>
-<li><a href="#toc_25">Android Studio 下载</a></li>
-<li><a href="#toc_26">Android ADT Bundle 下载</a></li>
+<li><a href="#toc_25">Android NDK 下载</a></li>
+<li><a href="#toc_26">Android Studio 下载</a></li>
+<li><a href="#toc_27">Android ADT Bundle 下载</a></li>
 </ul></li>
-<li><a href="#toc_27">Cocos 第三方游戏工具下载</a>
+<li><a href="#toc_28">Cocos 第三方游戏工具下载</a>
 
 <ul>
-<li><a href="#toc_28">位图字体工具</a></li>
-<li><a href="#toc_29">粒子编辑工具</a></li>
-<li><a href="#toc_30">物理编辑工具</a></li>
-<li><a href="#toc_31">场景编辑工具</a></li>
-<li><a href="#toc_32">纹理图集工具</a></li>
-<li><a href="#toc_33">瓦片地图编辑工具</a></li>
-<li><a href="#toc_34">声音特效编辑工具</a></li>
-<li><a href="#toc_35">背景音乐编辑工具</a></li>
-<li><a href="#toc_36">GIF 动画帧导出工具</a></li>
-<li><a href="#toc_37">骨骼动画编辑工具</a></li>
-<li><a href="#toc_38">3D 模型工具</a></li>
-<li><a href="#toc_39">体素编辑工具</a></li>
+<li><a href="#toc_29">位图字体工具</a></li>
+<li><a href="#toc_30">粒子编辑工具</a></li>
+<li><a href="#toc_31">物理编辑工具</a></li>
+<li><a href="#toc_32">场景编辑工具</a></li>
+<li><a href="#toc_33">纹理图集工具</a></li>
+<li><a href="#toc_34">瓦片地图编辑工具</a></li>
+<li><a href="#toc_35">声音特效编辑工具</a></li>
+<li><a href="#toc_36">背景音乐编辑工具</a></li>
+<li><a href="#toc_37">GIF 动画帧导出工具</a></li>
+<li><a href="#toc_38">骨骼动画编辑工具</a></li>
+<li><a href="#toc_39">3D 模型工具</a></li>
+<li><a href="#toc_40">体素编辑工具</a></li>
 </ul></li>
 </ul>
 
@@ -539,6 +680,10 @@ sup {
 </thead>
 
 <tbody>
+<tr>
+<td style="text-align: left">cocos2d-x-3.17.1</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/cocos2d-x-3.17.1">点击下载</a></td>
+</tr>
 <tr>
 <td style="text-align: left">cocos2d-x-3.17.zip</td>
 <td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/cocos2d-x-3.17.zip">点击下载</a></td>
@@ -960,7 +1105,419 @@ sup {
 
 <h3 id="toc_12">Cocos 配套工具下载</h3>
 
-<h4 id="toc_13">Cocos 下载</h4>
+<h4 id="toc_13">Cocos Creator v1 下载</h4>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: left">文件名</th>
+<th style="text-align: center">下载链接</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.10.2</em>win</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.10.2_win">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.10.2</em>mac</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.10.2_mac">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.10.1</em>win</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.10.1_win">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.10.1</em>mac</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.10.1_mac">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.10.0</em>win</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.10.0_win">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.10.0</em>mac</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.10.0_mac">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>1.9.3</em>win</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_1.9.3_win">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.9.3</em>mac</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.9.3_mac">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.9.2</em>win</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.9.2_win">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.9.2</em>mac</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.9.2_mac">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.9.1</em>win</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.9.1_win">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.9.1</em>mac</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.9.1_mac">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.9.0</em>win</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.9.0_win">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.9.0</em>mac</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.9.0_mac">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.9.0-rc1</em>mac</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.9.0-rc1_mac">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.8.2</em>win</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.8.2_win">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.8.2</em>mac</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.8.2_mac">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.8.1</em>win</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.8.1_win">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.8.1</em>mac</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.8.1_mac">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.8.0</em>win</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.8.0_win">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.8.0</em>mac</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.8.0_mac">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.7.2</em>win</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.7.2_win">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.7.2</em>mac</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.7.2_mac">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.7.0</em>win</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.7.0_win">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.7.0</em>mac</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.7.0_mac">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.6.2</em>win</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.6.2_win">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.6.2</em>mac</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.6.2_mac">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.6.1</em>win</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.6.1_win">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.6.1</em>mac</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.6.1_mac">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.6.0</em>win</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.6.0_win">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.6.0</em>mac</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.6.0_mac">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.5.2</em>mac</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.5.2_mac">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.5.2</em>win</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.5.2_win">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.5.1</em>mac</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.5.1_mac">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.5.1</em>win</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.5.1_win">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.5.0</em>mac</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.5.0_mac">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.5.0</em>win</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.5.0_win">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.4.2</em>mac</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.4.2_mac">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.4.2</em>win</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.4.2_win">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.4.1</em>mac</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.4.1_mac">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.4.1</em>win</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.4.1_win">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.4.0</em>mac</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.4.0_mac">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.4.0</em>win</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.4.0_win">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.3.3</em>mac</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.3.3_mac">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.3.3</em>win</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.3.3_win">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.3.2</em>mac</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.3.2_mac">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.3.2</em>win</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.3.2_win">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.3.1</em>mac</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.3.1_mac">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.3.1</em>win</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.3.1_win">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.3.0</em>mac</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.3.0_mac">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.3.0</em>win</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.3.0_win">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">Creator-Lua-Support-1.1.3-mac</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/Creator-Lua-Support-1.1.3-mac">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">Creator-Lua-Support-1.1.3-win</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/Creator-Lua-Support-1.1.3-win">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.2.2</em>mac</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.2.2_mac">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.2.2</em>win</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.2.2_win">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.2.1</em>mac</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.2.1_mac">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.2.1</em>win</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.2.1_win">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator-Lua-v1.0</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator-Lua-v1.0">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.2.0</em>mac</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.2.0_mac">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.2.0</em>win</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.2.0_win">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.1.2</em>mac</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.1.2_mac">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.1.2</em>win</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.1.2_win">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.1.1</em>win</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.1.1_win">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.1.1</em>mac</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.1.1_mac">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.1.0</em>win</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.1.0_win">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.1.0</em>mac</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.1.0_mac">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.0.3</em>win</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.0.3_win">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.0.3</em>mac</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.0.3_mac">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.0.2</em>mac</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.0.2_mac">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.0.2</em>win</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.0.2_win">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.0.1</em>mac</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.0.1_mac">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.0.1</em>win</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.0.1_win">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.0.0</em>win_en</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.0.0_win_en">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.0.0</em>win</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.0.0_win">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.0.0</em>mac_en</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.0.0_mac_en">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v1.0.0</em>mac</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.0.0_mac">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v0.7.1</em>win_en</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v0.7.1_win_en">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v0.7.1</em>mac_en</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v0.7.1_mac_en">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v0.7.0</em>mac.zip</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v0.7.0_mac.zip">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v0.7.0</em>win.zip</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v0.7.0_win.zip">点击下载</a></td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="toc_14">Cocos Creator v2 下载</h4>
+
+<table>
+<thead>
+<tr>
+<th style="text-align: left">文件名</th>
+<th style="text-align: center">下载链接</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td style="text-align: left">CocosCreator<em>v2.1.0</em>win</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v2.1.0_win">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v2.1.0</em>mac</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v2.1.0_mac">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v2.0.7</em>win</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v2.0.7_win">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v2.0.7</em>mac</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v2.0.7_mac">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v2.0.6</em>win</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v2.0.6_win">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v2.0.6</em>mac</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v2.0.6_mac">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v2.0.5</em>win</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v2.0.5_win">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v2.0.5</em>mac</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v2.0.5_mac">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v2.0.4</em>win</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v2.0.4_win">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v2.0.4</em>mac</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v2.0.4_mac">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v2.0.2</em>win</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v2.0.2_win">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v2.0.2</em>mac</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v2.0.2_mac">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v2.0.1</em>win</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v2.0.1_win">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v2.0.1</em>mac</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v2.0.1_mac">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v2.0.0</em>win</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v2.0.0_win">点击下载</a></td>
+</tr>
+<tr>
+<td style="text-align: left">CocosCreator<em>v2.0.0</em>mac</td>
+<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v2.0.0_mac">点击下载</a></td>
+</tr>
+</tbody>
+</table>
+
+<h4 id="toc_15">Cocos 下载</h4>
 
 <table>
 <thead>
@@ -1302,7 +1859,7 @@ sup {
 </tbody>
 </table>
 
-<h4 id="toc_14">Cocos Studio 下载</h4>
+<h4 id="toc_16">Cocos Studio 下载</h4>
 
 <table>
 <thead>
@@ -1464,7 +2021,7 @@ sup {
 </tbody>
 </table>
 
-<h4 id="toc_15">Cocos FrameWork 下载</h4>
+<h4 id="toc_17">Cocos FrameWork 下载</h4>
 
 <table>
 <thead>
@@ -1570,7 +2127,7 @@ sup {
 </tbody>
 </table>
 
-<h4 id="toc_16">Cocos Simuator 下载</h4>
+<h4 id="toc_18">Cocos Simuator 下载</h4>
 
 <table>
 <thead>
@@ -1592,7 +2149,7 @@ sup {
 </tbody>
 </table>
 
-<h4 id="toc_17">Cocos IDE 下载</h4>
+<h4 id="toc_19">Cocos IDE 下载</h4>
 
 <table>
 <thead>
@@ -1786,311 +2343,9 @@ sup {
 </tbody>
 </table>
 
-<h4 id="toc_18">Cocos Creator 下载</h4>
+<h3 id="toc_20">Cocos 版本关系说明</h3>
 
-<table>
-<thead>
-<tr>
-<th style="text-align: left">文件名</th>
-<th style="text-align: center">下载链接</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.9.2</em>win</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.9.2_win">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.9.2</em>mac</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.9.2_mac">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.9.1</em>win</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.9.1_win">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.9.1</em>mac</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.9.1_mac">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.9.0</em>win</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.9.0_win">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.9.0</em>mac</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.9.0_mac">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.9.0-rc1</em>mac</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.9.0-rc1_mac">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.8.2</em>win</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.8.2_win">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.8.2</em>mac</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.8.2_mac">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.8.1</em>win</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.8.1_win">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.8.1</em>mac</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.8.1_mac">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.8.0</em>win</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.8.0_win">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.8.0</em>mac</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.8.0_mac">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.7.2</em>win</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.7.2_win">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.7.2</em>mac</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.7.2_mac">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.7.0</em>win</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.7.0_win">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.7.0</em>mac</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.7.0_mac">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.6.2</em>win</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.6.2_win">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.6.2</em>mac</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.6.2_mac">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.6.1</em>win</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.6.1_win">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.6.1</em>mac</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.6.1_mac">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.6.0</em>win</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.6.0_win">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.6.0</em>mac</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.6.0_mac">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.5.2</em>mac</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.5.2_mac">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.5.2</em>win</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.5.2_win">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.5.1</em>mac</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.5.1_mac">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.5.1</em>win</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.5.1_win">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.5.0</em>mac</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.5.0_mac">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.5.0</em>win</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.5.0_win">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.4.2</em>mac</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.4.2_mac">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.4.2</em>win</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.4.2_win">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.4.1</em>mac</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.4.1_mac">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.4.1</em>win</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.4.1_win">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.4.0</em>mac</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.4.0_mac">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.4.0</em>win</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.4.0_win">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.3.3</em>mac</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.3.3_mac">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.3.3</em>win</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.3.3_win">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.3.2</em>mac</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.3.2_mac">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.3.2</em>win</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.3.2_win">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.3.1</em>mac</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.3.1_mac">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.3.1</em>win</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.3.1_win">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.3.0</em>mac</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.3.0_mac">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.3.0</em>win</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.3.0_win">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">Creator-Lua-Support-1.1.3-mac</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/Creator-Lua-Support-1.1.3-mac">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">Creator-Lua-Support-1.1.3-win</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/Creator-Lua-Support-1.1.3-win">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.2.2</em>mac</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.2.2_mac">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.2.2</em>win</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.2.2_win">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.2.1</em>mac</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.2.1_mac">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.2.1</em>win</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.2.1_win">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator-Lua-v1.0</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator-Lua-v1.0">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.2.0</em>mac</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.2.0_mac">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.2.0</em>win</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.2.0_win">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.1.2</em>mac</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.1.2_mac">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.1.2</em>win</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.1.2_win">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.1.1</em>win</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.1.1_win">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.1.1</em>mac</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.1.1_mac">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.1.0</em>win</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.1.0_win">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.1.0</em>mac</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.1.0_mac">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.0.3</em>win</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.0.3_win">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.0.3</em>mac</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.0.3_mac">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.0.2</em>mac</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.0.2_mac">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.0.2</em>win</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.0.2_win">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.0.1</em>mac</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.0.1_mac">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.0.1</em>win</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.0.1_win">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.0.0</em>win_en</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.0.0_win_en">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.0.0</em>win</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.0.0_win">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.0.0</em>mac_en</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.0.0_mac_en">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v1.0.0</em>mac</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v1.0.0_mac">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v0.7.1</em>win_en</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v0.7.1_win_en">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v0.7.1</em>mac_en</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v0.7.1_mac_en">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v0.7.0</em>mac.zip</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v0.7.0_mac.zip">点击下载</a></td>
-</tr>
-<tr>
-<td style="text-align: left">CocosCreator<em>v0.7.0</em>win.zip</td>
-<td style="text-align: center"><a href="http://www.cocos2d-x.org/filedown/CocosCreator_v0.7.0_win.zip">点击下载</a></td>
-</tr>
-</tbody>
-</table>
-
-<h3 id="toc_19">Cocos 版本关系说明</h3>
-
-<h4 id="toc_20">Cocos2d-x 与 Cocos Studio 版本对应关系</h4>
+<h4 id="toc_21">Cocos2d-x 与 Cocos Studio 版本对应关系</h4>
 
 <p><em>此部分数据来自<a href="http://www.cocoachina.com/bbs/read.php?tid-182077-keyword-%B0%E6%B1%BE%B6%D4%D3%A6.html">CocoaChina: Cocos Studio和Cocos2d-x版本对应关系</a>，数据可能不完整，仅提供参考。</em></p>
 
@@ -2238,7 +2493,7 @@ sup {
 </tbody>
 </table>
 
-<h4 id="toc_21">Cocos2d-x 与 NDK 版本对应关系</h4>
+<h4 id="toc_22">Cocos2d-x 与 NDK 版本对应关系</h4>
 
 <table>
 <thead>
@@ -2308,9 +2563,9 @@ sup {
 </tbody>
 </table>
 
-<h3 id="toc_22">Cocos Android 相关下载</h3>
+<h3 id="toc_23">Cocos Android 相关下载</h3>
 
-<h4 id="toc_23">Android NDK 下载</h4>
+<h4 id="toc_24">Android NDK 下载</h4>
 
 <table>
 <thead>
@@ -2340,7 +2595,7 @@ sup {
 </tbody>
 </table>
 
-<h4 id="toc_24">Android Studio 下载</h4>
+<h4 id="toc_25">Android Studio 下载</h4>
 
 <p><em>从 Cocos2d-x v3.7 开始支持使用 Android Studio。</em></p>
 
@@ -2348,15 +2603,15 @@ sup {
 <li><a href="https://github.com/inferjay/AndroidDevTools#android-studio">点击下载</a></li>
 </ul>
 
-<h4 id="toc_25">Android ADT Bundle 下载</h4>
+<h4 id="toc_26">Android ADT Bundle 下载</h4>
 
 <ul>
 <li><a href="https://github.com/inferjay/AndroidDevTools#adt-bundle">点击下载</a></li>
 </ul>
 
-<h3 id="toc_26">Cocos 第三方游戏工具下载</h3>
+<h3 id="toc_27">Cocos 第三方游戏工具下载</h3>
 
-<h4 id="toc_27">位图字体工具</h4>
+<h4 id="toc_28">位图字体工具</h4>
 
 <table>
 <thead>
@@ -2396,7 +2651,7 @@ sup {
 </tbody>
 </table>
 
-<h4 id="toc_28">粒子编辑工具</h4>
+<h4 id="toc_29">粒子编辑工具</h4>
 
 <table>
 <thead>
@@ -2436,7 +2691,7 @@ sup {
 </tbody>
 </table>
 
-<h4 id="toc_29">物理编辑工具</h4>
+<h4 id="toc_30">物理编辑工具</h4>
 
 <table>
 <thead>
@@ -2470,7 +2725,7 @@ sup {
 </tbody>
 </table>
 
-<h4 id="toc_30">场景编辑工具</h4>
+<h4 id="toc_31">场景编辑工具</h4>
 
 <table>
 <thead>
@@ -2510,7 +2765,7 @@ sup {
 </tbody>
 </table>
 
-<h4 id="toc_31">纹理图集工具</h4>
+<h4 id="toc_32">纹理图集工具</h4>
 
 <table>
 <thead>
@@ -2550,7 +2805,7 @@ sup {
 </tbody>
 </table>
 
-<h4 id="toc_32">瓦片地图编辑工具</h4>
+<h4 id="toc_33">瓦片地图编辑工具</h4>
 
 <table>
 <thead>
@@ -2578,7 +2833,7 @@ sup {
 </tbody>
 </table>
 
-<h4 id="toc_33">声音特效编辑工具</h4>
+<h4 id="toc_34">声音特效编辑工具</h4>
 
 <table>
 <thead>
@@ -2618,7 +2873,7 @@ sup {
 </tbody>
 </table>
 
-<h4 id="toc_34">背景音乐编辑工具</h4>
+<h4 id="toc_35">背景音乐编辑工具</h4>
 
 <table>
 <thead>
@@ -2652,7 +2907,7 @@ sup {
 </tbody>
 </table>
 
-<h4 id="toc_35">GIF 动画帧导出工具</h4>
+<h4 id="toc_36">GIF 动画帧导出工具</h4>
 
 <table>
 <thead>
@@ -2680,7 +2935,7 @@ sup {
 </tbody>
 </table>
 
-<h4 id="toc_36">骨骼动画编辑工具</h4>
+<h4 id="toc_37">骨骼动画编辑工具</h4>
 
 <table>
 <thead>
@@ -2714,7 +2969,7 @@ sup {
 </tbody>
 </table>
 
-<h4 id="toc_37">3D 模型工具</h4>
+<h4 id="toc_38">3D 模型工具</h4>
 
 <table>
 <thead>
@@ -2736,7 +2991,7 @@ sup {
 </tbody>
 </table>
 
-<h4 id="toc_38">体素编辑工具</h4>
+<h4 id="toc_39">体素编辑工具</h4>
 
 <table>
 <thead>
@@ -2770,9 +3025,13 @@ sup {
 </tbody>
 </table>
 
-<p>更新时间：2018-06-24 12:04:56</p>
+<p>更新时间：2019-01-23 11:58:46</p>
 
 
+
+<script type="text/javascript">
+var _self="undefined"!=typeof window?window:"undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?self:{},Prism=function(){var e=/\blang(?:uage)?-(\w+)\b/i,t=0,n=_self.Prism={util:{encode:function(e){return e instanceof a?new a(e.type,n.util.encode(e.content),e.alias):"Array"===n.util.type(e)?e.map(n.util.encode):e.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/\u00a0/g," ")},type:function(e){return Object.prototype.toString.call(e).match(/\[object (\w+)\]/)[1]},objId:function(e){return e.__id||Object.defineProperty(e,"__id",{value:++t}),e.__id},clone:function(e){var t=n.util.type(e);switch(t){case"Object":var a={};for(var r in e)e.hasOwnProperty(r)&&(a[r]=n.util.clone(e[r]));return a;case"Array":return e.map&&e.map(function(e){return n.util.clone(e)})}return e}},languages:{extend:function(e,t){var a=n.util.clone(n.languages[e]);for(var r in t)a[r]=t[r];return a},insertBefore:function(e,t,a,r){r=r||n.languages;var l=r[e];if(2==arguments.length){a=arguments[1];for(var i in a)a.hasOwnProperty(i)&&(l[i]=a[i]);return l}var o={};for(var s in l)if(l.hasOwnProperty(s)){if(s==t)for(var i in a)a.hasOwnProperty(i)&&(o[i]=a[i]);o[s]=l[s]}return n.languages.DFS(n.languages,function(t,n){n===r[e]&&t!=e&&(this[t]=o)}),r[e]=o},DFS:function(e,t,a,r){r=r||{};for(var l in e)e.hasOwnProperty(l)&&(t.call(e,l,e[l],a||l),"Object"!==n.util.type(e[l])||r[n.util.objId(e[l])]?"Array"!==n.util.type(e[l])||r[n.util.objId(e[l])]||(r[n.util.objId(e[l])]=!0,n.languages.DFS(e[l],t,l,r)):(r[n.util.objId(e[l])]=!0,n.languages.DFS(e[l],t,null,r)))}},plugins:{},highlightAll:function(e,t){var a={callback:t,selector:'code[class*="language-"], [class*="language-"] code, code[class*="lang-"], [class*="lang-"] code'};n.hooks.run("before-highlightall",a);for(var r,l=a.elements||document.querySelectorAll(a.selector),i=0;r=l[i++];)n.highlightElement(r,e===!0,a.callback)},highlightElement:function(t,a,r){for(var l,i,o=t;o&&!e.test(o.className);)o=o.parentNode;o&&(l=(o.className.match(e)||[,""])[1],i=n.languages[l]),t.className=t.className.replace(e,"").replace(/\s+/g," ")+" language-"+l,o=t.parentNode,/pre/i.test(o.nodeName)&&(o.className=o.className.replace(e,"").replace(/\s+/g," ")+" language-"+l);var s=t.textContent,u={element:t,language:l,grammar:i,code:s};if(!s||!i)return n.hooks.run("complete",u),void 0;if(n.hooks.run("before-highlight",u),a&&_self.Worker){var c=new Worker(n.filename);c.onmessage=function(e){u.highlightedCode=e.data,n.hooks.run("before-insert",u),u.element.innerHTML=u.highlightedCode,r&&r.call(u.element),n.hooks.run("after-highlight",u),n.hooks.run("complete",u)},c.postMessage(JSON.stringify({language:u.language,code:u.code,immediateClose:!0}))}else u.highlightedCode=n.highlight(u.code,u.grammar,u.language),n.hooks.run("before-insert",u),u.element.innerHTML=u.highlightedCode,r&&r.call(t),n.hooks.run("after-highlight",u),n.hooks.run("complete",u)},highlight:function(e,t,r){var l=n.tokenize(e,t);return a.stringify(n.util.encode(l),r)},tokenize:function(e,t){var a=n.Token,r=[e],l=t.rest;if(l){for(var i in l)t[i]=l[i];delete t.rest}e:for(var i in t)if(t.hasOwnProperty(i)&&t[i]){var o=t[i];o="Array"===n.util.type(o)?o:[o];for(var s=0;s<o.length;++s){var u=o[s],c=u.inside,g=!!u.lookbehind,h=!!u.greedy,f=0,d=u.alias;u=u.pattern||u;for(var p=0;p<r.length;p++){var m=r[p];if(r.length>e.length)break e;if(!(m instanceof a)){u.lastIndex=0;var y=u.exec(m),v=1;if(!y&&h&&p!=r.length-1){var b=r[p+1].matchedStr||r[p+1],k=m+b;if(p<r.length-2&&(k+=r[p+2].matchedStr||r[p+2]),u.lastIndex=0,y=u.exec(k),!y)continue;var w=y.index+(g?y[1].length:0);if(w>=m.length)continue;var _=y.index+y[0].length,P=m.length+b.length;if(v=3,P>=_){if(r[p+1].greedy)continue;v=2,k=k.slice(0,P)}m=k}if(y){g&&(f=y[1].length);var w=y.index+f,y=y[0].slice(f),_=w+y.length,S=m.slice(0,w),O=m.slice(_),j=[p,v];S&&j.push(S);var A=new a(i,c?n.tokenize(y,c):y,d,y,h);j.push(A),O&&j.push(O),Array.prototype.splice.apply(r,j)}}}}}return r},hooks:{all:{},add:function(e,t){var a=n.hooks.all;a[e]=a[e]||[],a[e].push(t)},run:function(e,t){var a=n.hooks.all[e];if(a&&a.length)for(var r,l=0;r=a[l++];)r(t)}}},a=n.Token=function(e,t,n,a,r){this.type=e,this.content=t,this.alias=n,this.matchedStr=a||null,this.greedy=!!r};if(a.stringify=function(e,t,r){if("string"==typeof e)return e;if("Array"===n.util.type(e))return e.map(function(n){return a.stringify(n,t,e)}).join("");var l={type:e.type,content:a.stringify(e.content,t,r),tag:"span",classes:["token",e.type],attributes:{},language:t,parent:r};if("comment"==l.type&&(l.attributes.spellcheck="true"),e.alias){var i="Array"===n.util.type(e.alias)?e.alias:[e.alias];Array.prototype.push.apply(l.classes,i)}n.hooks.run("wrap",l);var o="";for(var s in l.attributes)o+=(o?" ":"")+s+'="'+(l.attributes[s]||"")+'"';return"<"+l.tag+' class="'+l.classes.join(" ")+'" '+o+">"+l.content+"</"+l.tag+">"},!_self.document)return _self.addEventListener?(_self.addEventListener("message",function(e){var t=JSON.parse(e.data),a=t.language,r=t.code,l=t.immediateClose;_self.postMessage(n.highlight(r,n.languages[a],a)),l&&_self.close()},!1),_self.Prism):_self.Prism;var r=document.currentScript||[].slice.call(document.getElementsByTagName("script")).pop();return r&&(n.filename=r.src,document.addEventListener&&!r.hasAttribute("data-manual")&&document.addEventListener("DOMContentLoaded",n.highlightAll)),_self.Prism}();"undefined"!=typeof module&&module.exports&&(module.exports=Prism),"undefined"!=typeof global&&(global.Prism=Prism);
+</script>
 
 
 </body>
